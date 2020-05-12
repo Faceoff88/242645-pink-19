@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Денис Фейзов](https://up.htmlacademy.ru/adaptive/19/user/242645).
-* Наставник: `Неизвестно`.
+- Студент: [Денис Фейзов](https://up.htmlacademy.ru/adaptive/19/user/242645).
+- Наставник: [Андрей Гинтер](https://htmlacademy.ru/profile/id781369).
 
 ---
 
