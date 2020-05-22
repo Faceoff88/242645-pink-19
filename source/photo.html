@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="logo page-header__logo">
-        <img class="logo-image" src="./img/logotype-white-mobile.png" alt="Логотип сайта" width="75" height="22">
+        <img class="logo_image" src="./img/logotype-white-mobile.png" alt="Логотип сайта" width="75" height="22">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -27,7 +29,7 @@
           <ul class="photo-users__list">
             <li class="photo-users__item photo-users__item--panorama">
               <img src="./img/panorama-desktop.jpg" alt="Фотография пользователя" class="photo-users__image">
-              <div class="photo-users__user-desc">
+              <div class="user-desc">
                 <h3 class="user-desc__username">Анна <span class="user-desc__time">(5 минут назад)</span></h3>
                 <p class="user-desc__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
                 <span class="user-desc__rating">Нравится: 215</span>
@@ -35,7 +37,7 @@
             </li>
             <li class="photo-users__item">
               <img src="./img/photo-1-desktop.jpg" alt="Фотография пользователя" class="photo-users__image">
-              <div class="photo-users__user-desc">
+              <div class="user-desc">
                 <h3 class="user-desc__username">Левон <span class="user-desc__time">(5 часов назад)</span></h3>
                 <p class="user-desc__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                 <span class="user-desc__rating">Нравится: 356</span>
@@ -43,7 +45,7 @@
             </li>
             <li class="photo-users__item">
               <img src="./img/photo-2-desktop.jpg" alt="Фотография пользователя" class="photo-users__image">
-              <div class="photo-users__user-desc">
+              <div class="user-desc">
                 <h3 class="user-desc__username">Антон <span class="user-desc__time">(12 часов назад)</span></h3>
                 <p class="user-desc__text">Соседи будут рады!</p>
                 <span class="user-desc__rating">Нравится: 666</span>
@@ -51,7 +53,7 @@
             </li>
             <li class="photo-users__item">
               <img src="./img/photo-3-desktop.jpg" alt="Фотография пользователя" class="photo-users__image">
-              <div class="photo-users__user-desc">
+              <div class="user-desc">
                 <h3 class="user-desc__username">Борис <span class="user-desc__time">(20 часов назад)</span></h3>
                 <p class="user-desc__text">Здесь могла быть ваша цитата о высоком и вечном</p>
                 <span class="user-desc__rating">Нравится: 215</span>
@@ -59,7 +61,7 @@
             </li>
             <li class="photo-users__item">
               <img src="./img/photo-4-desktop.jpg" alt="Фотография пользователя" class="photo-users__image">
-              <div class="photo-users__user-desc">
+              <div class="user-desc">
                 <h3 class="user-desc__username">Сергей <span class="user-desc__time">(25 часов назад)</span></h3>
                 <p class="user-desc__text">Самая кубанская в мире!</p>
                 <span class="user-desc__rating">Нравится: 4</span>
@@ -67,7 +69,7 @@
             </li>
             <li class="photo-users__item">
               <img src="./img/photo-5-desktop.jpg" alt="Фотография пользователя" class="photo-users__image">
-              <div class="photo-users__user-desc">
+              <div class="user-desc">
                 <h3 class="user-desc__username">Максим <span class="user-desc__time">(40 часов назад)</span></h3>
                 <p class="user-desc__text">Где снег-то?</p>
                 <span class="user-desc__rating">Нравится: 150</span>
@@ -75,7 +77,7 @@
             </li>
             <li class="photo-users__item">
               <img src="./img/photo-6-desktop.jpg" alt="Фотография пользователя" class="photo-users__image">
-              <div class="photo-users__user-desc">
+              <div class="user-desc">
                 <h3 class="user-desc__username">Надежда <span class="user-desc__time">(45 часов назад)</span></h3>
                 <p class="user-desc__text">Всем GM и взаимные лайки!</p>
                 <span class="user-desc__rating">Нравится: 2560</span>
@@ -123,15 +125,15 @@
         <a href="./index.html" class="footer__logo">
           <img src="./img/logotype-blue-tablet.svg" alt="Логотип сайта" class="footer__logo-image">
         </a>
-        <ul class="footer__social-list">
-          <li class="footer__social-item">
-            <a href="#" class="footer__social-links footer__social-links--twitter" title="twitter">twitter</a>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" class="social-links social-links--twitter" title="twitter">twitter</a>
           </li>
-          <li class="footer__social-item">
-            <a href="#" class="footer__social-links footer__social-links--facebook" title="facebook">facebook</a>
+          <li class="social-item">
+            <a href="#" class="social-links social-links--facebook" title="facebook">facebook</a>
           </li>
-          <li class="footer__social-item">
-            <a href="#" class="footer__social-links footer__social-links--youtube" title="youtube">youtube</a>
+          <li class="social-item">
+            <a href="#" class="social-links social-links--youtube" title="youtube">youtube</a>
           </li>
         </ul>
         <div class="copyright">
