@@ -1,0 +1,33 @@
+.photos {
+  color: #283645;
+}
+.photos__wrapper {
+  padding-top: 45px;
+  width: 100%;
+  margin: 0 auto;
+}
+.photos__desc {
+  font-size: 14px;
+  font-weight: 400;
+  color: #283645;
+  line-height: 30px;
+  max-width: 250px;
+  margin: 0 auto 49px auto;
+  text-align: center;
+}
+@media (min-width: @tablet-width) {
+  .photos__desc {
+      max-width: 440px;
+      font-size: 18px;
+      margin-bottom: 76px;
+  }
+  .photos__wrapper {
+      padding-top: 92px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .photos__desc {
+      max-width: 580px;
+      margin-bottom: 88px;
+  }
+}
