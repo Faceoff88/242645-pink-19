@@ -2,58 +2,67 @@
   text-align: center;
   padding-top: 40px;
 }
+
 .main-footer__map {
   overflow: hidden;
   position: relative;
   min-height: 210px;
+  height: 210px;
+  width: 100%;
+
   &::before {
-      content:"";
-      position: absolute;
-      display: inline-block;
-      background: url("../img/bg-triangle-white-footer.svg") no-repeat;
-      top: -21px;
-      left: 50%;
-      width: 596px;
-      height: 62px;
-      transform: translateX(-50%);
-      z-index: 5;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat;
+    top: -21px;
+    left: 50%;
+    width: 596px;
+    height: 62px;
+    transform: translateX(-50%);
+    z-index: 5;
   }
 }
+
 @media (min-width: @tablet-width) {
   .main-footer__map {
-      height: 372px;
+    height: 372px;
+    margin: 0 auto;
+
+    &::before {
+      background: url("../img/bg-triangle-white-footer.svg") no-repeat;
+      top: 0;
+      background-size: 96%;
+      left: 50%;
       width: 660px;
-      margin: 0 auto;
-      &::before {
-          background: url("../img/bg-triangle-white-footer.svg") no-repeat;
-          top: 0px;
-          background-size: 96%;
-          left: 50%;
-          width: 660px;
-          height: 75px;
-          transform: translatex(-48%);
-      }
+      height: 75px;
+      transform: translateX(-48%);
+    }
   }
+
   .main-footer {
-      padding-top: 48px;
+    padding-top: 48px;
   }
 }
-@media (min-width: @desktop-width){
+
+@media (min-width: @desktop-width) {
   .main-footer {
-      padding-top: 63px;
+    padding-top: 63px;
   }
+
   .main-footer__map {
-      height: 492px;
+    height: 492px;
+    width: 100%;
+    margin: 0 auto;
+
+    &::before {
+      background: url("../img/bg-triangle-white-footer.svg") no-repeat;
+      top: -15px;
+      background-size: 94%;
+      left: 52%;
       width: 1200px;
-      margin: 0 auto;
-      &::before {
-          background: url("../img/bg-triangle-white-footer.svg") no-repeat;
-          top: -15px;
-          background-size: 94%;
-          left: 52%;
-          width: 1200px;
-          height: 120px;
-          transform: translatex(-48%) scaleX(1.1) scaleY(0.80);
-      }
+      height: 120px;
+      transform: translateX(-48%) scaleX(1.1) scaleY(0.8);
+    }
   }
 }

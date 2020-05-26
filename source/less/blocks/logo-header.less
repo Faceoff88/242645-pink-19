@@ -1,56 +1,73 @@
 .logo-header__img {
-  fill: #fff;
+  fill: #ffffff;
 }
+
 .logo-header__img-desktop,
 .logo-header__img-tablet {
   display: none;
-  fill: #fff;
+  fill: #ffffff;
 }
+
 .logo-header__link--active {
   cursor: pointer;
-  &:hover .logo-header__img {
-      fill: #d22856;
+
+  &:hover .logo-header__img,
+  &:focus .logo-header__img {
+    fill: #d22856;
   }
+
   &:active .logo-header__img {
-      opacity:0.3;
-      fill: #fff;
+    opacity: 0.3;
+    fill: #ffffff;
   }
-  &:hover .logo-header__img-tablet {
-      fill: #d22856;
+
+  &:hover .logo-header__img-tablet,
+  &:focus .logo-header__img-tablet {
+    fill: #d22856;
   }
+
   &:active .logo-header__img-tablet {
-      opacity:0.3;
-      fill: #fff;
+    opacity: 0.3;
+    fill: #ffffff;
   }
-  &:hover .logo-header__img-desktop {
-      fill: #d22856;
+
+  &:hover .logo-header__img-desktop,
+  &:focus .logo-header__img-desktop {
+    fill: #d22856;
   }
 }
+
 @media (min-width: @tablet-width) {
   .logo-header__img {
-      display: none;
+    display: none;
   }
+
   .logo-header__img-tablet {
-      display: block;
+    display: block;
   }
 }
+
 @media (min-width: @desktop-width) {
   .logo-header__img-tablet {
-      display: none;
+    display: none;
   }
+
   .logo-header__img-desktop {
-      display: block;
+    display: block;
   }
+
   .logo-header__path-second {
-      fill: #d22856;
+    fill: #d22856;
   }
+
   .logo-header__link--active {
-      &:active .logo-header__img-desktop {
-          opacity:0.3;
-          fill: #fff;
-      }
-      &:active .logo-header__path-second {
-          fill: #fff;
-      }
+    &:active .logo-header__img-desktop {
+      opacity: 0.3;
+      fill: #ffffff;
+    }
+
+    &:active .logo-header__path-second {
+      fill: #ffffff;
+    }
   }
 }

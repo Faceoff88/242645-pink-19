@@ -6,37 +6,47 @@
   width: 50px;
   height: 24px;
   outline: none;
+  margin-right: 12px;
 }
+
 .page-nav__svg {
-  fill: #fff;
-  &:hover {
-      fill:#d22856;
+  fill: #ffffff;
+
+  &:hover,
+  &:focus {
+    fill: #d22856;
   }
+
   &:active {
-      fill:#d22856;
-      opacity: 0.3;
+    fill: #d22856;
+    opacity: 0.3;
   }
+
   &--hidden {
-      display: none;
+    display: none;
   }
 }
+
 .page-nav__toggle--hide {
   display: none;
 }
+
 @media (max-width: @header-break) {
   .page-header {
-      &--menu {
-          padding-bottom: 191px;
-      }
+    &--menu {
+      padding-bottom: 191px;
+    }
   }
 }
+
 @media (min-width: @tablet-width) {
   .page-nav__toggle {
-      padding-top: 18px;
+    padding-top: 18px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .page-nav__toggle {
-      display: none;
+    display: none;
   }
 }

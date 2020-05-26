@@ -6,6 +6,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Open Sans";
   src:
@@ -14,6 +15,7 @@
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Open Sans";
   src:
@@ -22,19 +24,23 @@
   font-weight: 700;
   font-style: normal;
 }
+
 body {
   margin: 0;
-  padding: 0;;
+  padding: 0;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
 }
+
 .wrapper {
   margin: 0 auto;
   padding: 0;
   width: 100%;
   box-sizing: border-box;
-  z-index:1;
+  z-index: 1;
 }
+
 .visually-hidden {
   position: absolute;
   height: 1px;
@@ -43,13 +49,16 @@ body {
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
 }
+
 .main {
   z-index: 1;
 }
+
 ul {
   list-style: none;
   padding: 0;
 }
-@tablet-width : 660px;
+
+@tablet-width: 660px;
 @desktop-width: 1200px;
 @header-break: 1199px;

@@ -4,6 +4,7 @@
   width: 192px;
   justify-content: space-around;
 }
+
 .socials__icons {
   display: inline-block;
   width: 45px;
@@ -12,30 +13,38 @@
   border-radius: 25px;
   background-repeat: no-repeat;
   background-position: center;
+
   &--twitter {
-      background-image: url("../img/icon-twitter.svg");
+    background-image: url("../img/icon-twitter.svg");
   }
+
   &--facebook {
-      background-image: url("../img/icon-facebook.svg");
+    background-image: url("../img/icon-facebook.svg");
   }
+
   &--youtube {
-      background-image: url("../img/icon-youtube.svg");
+    background-image: url("../img/icon-youtube.svg");
   }
-  &:hover {
-      border-color: #283645;
+
+  &:hover,
+  &:focus {
+    border-color: #283645;
   }
+
   &:active {
-      opacity: 0.3;
+    opacity: 0.3;
   }
 }
+
 @media (min-width: @tablet-width) {
   .socials {
-      margin-top: 4px;
-      margin-left: 66px;
+    margin-top: 4px;
+    margin-left: 66px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .socials {
-      margin-left: 232px;
+    margin-left: 232px;
   }
 }

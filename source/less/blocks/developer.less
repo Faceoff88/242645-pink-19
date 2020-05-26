@@ -1,9 +1,10 @@
 .developer {
   display: flex;
-  margin: 29px auto 0 auto;
+  margin: 29px auto 40px auto;
   width: 133px;
   align-items: center;
 }
+
 .developer__text {
   font-size: 14px;
   font-weight: 400;
@@ -11,9 +12,11 @@
   margin-right: 16px;
   margin-top: -5px;
 }
+
 .developer__link {
   margin-top: 5px;
 }
+
 .developer__logo {
   display: inline-block;
   width: 27px;
@@ -21,35 +24,45 @@
   background-image: url("../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
 }
+
 .developer__image {
   fill: #d22856;
-  &:hover {
-      fill: #283645;
+
+  &:hover,
+  &:focus {
+    fill: #283645;
   }
+
   &:active {
-      fill: #bec2c7;
+    fill: #bec2c7;
   }
 }
+
 @media (min-width: @tablet-width) {
   .developer {
-      margin-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
   }
+
   .developer__text {
-      margin-right: 16px;
-      margin-top: -2px;
-      margin-left: 17px;
+    margin-right: 16px;
+    margin-top: -2px;
+    margin-left: 17px;
   }
+
   .developer__link {
-      margin-top: 10px;
+    margin-top: 10px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .developer {
-      margin-left: 148px;
+    margin-left: 148px;
   }
+
   .developer__text {
-      margin-left: 15px;
-      font-size: 18px;
-      margin-right: 14px;
+    margin-left: 15px;
+    font-size: 18px;
+    margin-right: 14px;
   }
 }

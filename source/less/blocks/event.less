@@ -6,12 +6,14 @@
   font-size: 18px;
   line-height: 30px;
 }
+
 .event__title {
   width: 280px;
   margin: 0 auto;
   text-align: center;
   font-size: 14px;
 }
+
 .event__titles {
   color: #d22856;
   font-size: 14px;
@@ -21,16 +23,20 @@
   text-align: center;
   font-weight: 400;
 }
+
 .event__add {
   display: none;
 }
+
 .event__list {
   width: 320px;
   margin: 0 auto;
 }
+
 .event__titles--hide {
   display: none;
 }
+
 .event__text {
   display: inline-block;
   height: 195px;
@@ -38,24 +44,29 @@
   border: 2px solid #e5e5e5;
   outline: none;
   margin-bottom: 5px;
-  resize:vertical;
+  resize: vertical;
+
   &::placeholder {
-      color: #283645;
-      font-family: "Open Sans", "Arial", sans-serif;
-      font-size: 18px;
-      line-height: 30px;
-      width: 240px;
-      padding-left: 20px;
-      padding-top: 14px;
+    color: #283645;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    width: 240px;
+    padding-left: 20px;
+    padding-top: 14px;
   }
-  &:hover {
-      border-color: #283645;
+
+  &:hover,
+  &:focus {
+    border-color: #283645;
   }
+
   &:focus,
   &:active {
-      border-color: #d22856;
+    border-color: #d22856;
   }
 }
+
 .event__button {
   display: block;
   border-radius: 3px;
@@ -69,161 +80,196 @@
   border: none;
   text-transform: uppercase;
   color: white;
-  &:hover {
-      background-color: #1c9b5e;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
   }
+
   &:active {
-      color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.3);
   }
+
   &:disabled {
-      opacity: 0.3;
-      background-color: #283645;
+    opacity: 0.3;
+    background-color: #283645;
   }
 }
+
 .event__required {
   margin: 0 auto;
-  width:  184px;
+  width: 184px;
   text-transform: uppercase;
   font-size: 14px;
 }
+
 .event__star {
   color: #d22856;
 }
+
 .event__intro {
   display: none;
 }
-@-moz-document url-prefix() {
-  .event__text::-moz-placeholder{
-      color: #283645;
-      opacity: 1;
+
+@-moz-document url-prefix("") {
+  .event__text::-moz-placeholder {
+    color: #283645;
+    opacity: 1;
   }
+
   .event__text {
-      padding-left: 16px;
-      padding-top: 14px;
-      height: 204px;
-      box-sizing: border-box;
-      margin-bottom: 8px;
+    padding-left: 16px;
+    padding-top: 14px;
+    height: 204px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
   }
+
   .event__button {
-      padding: 20px 20px 21px 20px;
-      font-weight: 700;
+    padding: 20px 20px 21px 20px;
+    font-weight: 700;
   }
 }
-@media (min-width: @tablet-width){
+
+@media (min-width: @tablet-width) {
   .event {
-      padding-top: 92px;
+    padding-top: 92px;
   }
+
   .event__form {
-      display: flex;
-      width: 660px;
-      margin: 0 auto;
-      flex-wrap: wrap;
+    display: flex;
+    width: 660px;
+    margin: 0 auto;
+    flex-wrap: wrap;
   }
+
   .event__intro {
-      display: block;
+    display: block;
   }
+
   .event__title {
-      font-size: 18px;
-      line-height: 30px;
-      width: 550px;
+    font-size: 18px;
+    line-height: 30px;
+    width: 550px;
   }
+
   .event__list {
-      width: 660px;
-      margin: 0 auto;
-      padding-top: 34px;
+    width: 660px;
+    margin: 0 auto;
+    padding-top: 34px;
   }
+
   .event__text {
-      width: 490px;
-      height: 185px;
-      &::placeholder {
-          width: 475px;
-          padding-left:15px;
-          padding-top: 11px;
-      }
+    width: 490px;
+    height: 185px;
+
+    &::placeholder {
+      width: 475px;
+      padding-left: 15px;
+      padding-top: 11px;
+    }
   }
+
   .event__required,
   .event__button {
-      order: 6;
+    order: 6;
   }
+
   .event__required {
-      margin-top: 53px;
-      margin-right: 15px;
+    margin-top: 53px;
+    margin-right: 15px;
   }
+
   .event__button {
-      margin-left: 20px;
-      margin-top: 35px;
-      margin-bottom: 37px;
-      text-transform: uppercase;
-      width: 300px;
+    margin-left: 20px;
+    margin-top: 35px;
+    margin-bottom: 37px;
+    text-transform: uppercase;
+    width: 300px;
   }
+
   .event__titles {
-      width: 330px;
-      background-color: white;
-      position: absolute;
-      top: 3.3%;
-      left: 25.8%;
+    width: 330px;
+    background-color: white;
+    position: absolute;
+    top: 3.3%;
+    left: 25.8%;
   }
+
   .event__titles--hide {
-      display: block;
+    display: block;
   }
-  @-moz-document url-prefix() {
-      .event__button {
-          margin-top: 43px;
-      }
-      .event__required {
-          margin-top: 61px;
-          margin-right: 17px;
-      }
-      .event__text {
-          width: 500px;
-          height: 191px;
-          padding-left: 19px;
-          padding-top: 12px;
-          box-sizing: border-box;
-          margin-bottom: 9px;
-      }
+
+  @-moz-document url-prefix("") {
+    .event__button {
+      margin-top: 43px;
+    }
+
+    .event__required {
+      margin-top: 61px;
+      margin-right: 17px;
+    }
+
+    .event__text {
+      width: 500px;
+      height: 191px;
+      padding-left: 19px;
+      padding-top: 12px;
+      box-sizing: border-box;
+      margin-bottom: 9px;
+    }
   }
 }
+
 @media (min-width: @desktop-width) {
   .event {
-      padding-bottom: 0;
+    padding-bottom: 0;
   }
+
   .event__title {
-      width: 759px;
+    width: 759px;
   }
+
   .event__intro {
-      display: inline-block;
+    display: inline-block;
   }
+
   .event__form {
-      width: 980px;
+    width: 980px;
   }
+
   .event__titles {
-      width: 360px;
-      top: 3.3%;
-      left: 14.6%;
+    width: 360px;
+    top: 3.3%;
+    left: 14.6%;
   }
+
   .event__text {
-      width: 812px;
-      height: 120px;
+    width: 812px;
+    height: 120px;
   }
+
   .event__button {
-      margin-top: 33px;
-      margin-bottom: 0;
-      cursor: pointer;
+    margin-top: 33px;
+    margin-bottom: 0;
+    cursor: pointer;
   }
+
   .event__add {
-      display: inline-block;
+    display: inline-block;
   }
+
   .event__required {
-      margin-top: 51px;
-      width: 320px;
+    margin-top: 51px;
+    width: 320px;
   }
-  @-moz-document url-prefix() {
-      .event__text {
-          padding-left: 18px;
-          width: 820px;
-          height: 126px;
-          margin-bottom: 9px;
-      }
+
+  @-moz-document url-prefix("") {
+    .event__text {
+      padding-left: 18px;
+      width: 820px;
+      height: 126px;
+      margin-bottom: 9px;
+    }
   }
 }
